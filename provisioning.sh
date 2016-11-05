@@ -58,7 +58,7 @@ git clone https://github.com/ibm-et/spark-kernel.git
 apt-get install -yq --force-yes --no-install-recommends sbt
 cd spark-kernel
 sbt compile -Xms1024M -Xmx2048M -Xss1M -XX:+CMSClassUnloadingEnabled -XX:MaxPermSize=1024M
-sbt pack
+sbt package
 mv kernel/target/pack /opt/sparkkernel
 chmod +x /opt/sparkkernel
 rm -rf ~/.ivy2

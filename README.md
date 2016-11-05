@@ -35,6 +35,9 @@ In this case you have to install [cwRsync](http://www.rsync.net/resources/howto/
 git clone https://github.com/giabar/vagrant-jupyter.git
 cd vagrant-jupyter
 vagrant up
+vagrant ssh
+$sudo su -
+#./vagrant/provisioning.sh
 ```
 
 When the Vagrant provisioning/start-up processes are completed you can point your browser to:
